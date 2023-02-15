@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Rowdies:wght@300&family=Sofia+Sans:wght@200&display=swap');
+
+:root {
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'MontSerrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}   
+
+.cabecalho {
+    padding: 3% 0 0 18%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+}
+
+.destaque-titulo {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+}
+
+.apresentacao__botoes__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    box-sizing: border-box;
+    /* background-color: #22D4FD; */
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 21.5px 0;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-weight: bold; 
+}
+
+.botoes:hover {
+    background-color: #3F4E4F;
+    font-size: 28px;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 23.64px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabelaho_menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+/* combinações de cores:
+    https://coolors.co/ce2d4f-ce6d8b-cebbc9-4056f4-470ff4
+    https://colorhunt.co/
+
+    display: flex (por padrão vai ser em linha "row"), usamos quando queremos aplicar 
+    o conceito de "flexbox" para posicionar elementos
+
+    align-items: center (deixa os elementos centralizados entre eles, não centralizados
+    com a página em si)
+
+    justify-content: space-between (cria um espaço entre os elementos do flexbox,
+    dividindo de acordo com o tamanho total da tela)
+
+    flexbox:
+    https://www.alura.com.br/artigos/css-guia-do-flexbox
+
+    :root - pseudoclasse, para que um estilo seja aplicado globalmente
+
+    UNIDADES DE MEDIDA "REM"
+
+        - 1 REM = 16px
+
+    @media
+
+    Media Queries - usamos para responsividade, por exemplo:
+    "quando a tela for no máximo 600px, aplica esse estilo"
+
+
+
+    */
